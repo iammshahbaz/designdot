@@ -18,6 +18,11 @@ const Login = () => {
         }
     };
 
+    const handleRegisterClick = () => {
+        navigate('/register');
+      };
+    
+
     return (
         <div style={{
             display: 'flex',
@@ -54,8 +59,15 @@ const Login = () => {
                 
                 <button onClick={handleLogin} className="btn"> Login</button>
                 <div style={{fontFamily:"sans-serif"}}>
-                <p>Don't have an account ??? <a  href="/register">Register Here</a></p>
-
+                <p>
+        Don't have an account ???{' '}
+        <span
+          onClick={handleRegisterClick}
+          style={{ color: 'blue', cursor: 'pointer', textDecoration: 'underline' }}
+        >
+          Register Here
+        </span>
+      </p>
                 </div>
 
             </form>
