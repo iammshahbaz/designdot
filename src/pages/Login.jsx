@@ -51,7 +51,12 @@ const Login = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     className='inputStyle'
                 />
+                
                 <button onClick={handleLogin} className="btn"> Login</button>
+                <div style={{fontFamily:"sans-serif"}}>
+                <p>Don't have an account ??? <a  href="/register">Register Here</a></p>
+
+                </div>
 
             </form>
         </div>
